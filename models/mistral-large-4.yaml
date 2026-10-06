@@ -1,0 +1,21 @@
+# Source: https://docs.mistral.ai/models/mistral-large-4-0
+# The docs advertise 1M context without an exact token count. Weights/license pending.
+id: "mistral-large-4"
+name: "Mistral Large 4"
+description: "Mistral AI's multimodal model for reasoning, coding, and agentic workloads, with 1.05T total and 49B active parameters. Public preview with a 1M-token context; downloadable weights and the exact license are still marked as coming soon."
+capabilities:
+  - chat
+  - completion
+  - function-calling
+  - vision
+  - code-generation
+  - reasoning
+modalities:
+  - text
+  - image
+  - code
+context_window: 1000000
+licensing: "other"
+country: "fr"
+created_at: "2026-10-06T00:00:00.000Z"
+updated_at: "2026-10-06T00:00:00.000Z"

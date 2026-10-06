@@ -103,13 +103,13 @@
       ],
       "properties": {
         "requests_per_minute": {
-          "type": "integer",
-          "description": "Maximum number of API requests allowed per minute",
+          "type": ["integer", "null"],
+          "description": "Maximum API requests per minute; null when unpublished or account-specific",
           "minimum": 1
         },
         "tokens_per_minute": {
-          "type": "integer",
-          "description": "Maximum number of tokens (input + output) allowed per minute",
+          "type": ["integer", "null"],
+          "description": "Maximum input and output tokens per minute; null when unpublished or account-specific",
           "minimum": 1
         }
       }

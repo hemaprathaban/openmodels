@@ -5,6 +5,17 @@ All notable changes to the OpenModels Registry will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.16.0] - 2026-10-06
+
+### Added
+- **Mistral Large 4** - public-preview multimodal model with 1M advertised context, 1.05T total and 49B active parameters. Direct Mistral and OpenRouter mappings use current discounted pricing of $0.68 / $2.09 per million input/output tokens, plus $0.07 cached input. OpenRouter's 524,288-token context is recorded as an override. Weights and exact license remain pending (`licensing: other`). [Mistral documentation](https://docs.mistral.ai/models/mistral-large-4-0).
+- **Ling 3.1 Flash**, **Apodex 1.1 Mini**, and **Pareto 26.10 Preview**, with mappings checked against the [OpenRouter model catalog](https://openrouter.ai/api/v1/models). Ling and Apodex are currently zero-priced; this does not promise permanent free access.
+- **Kolibri 1** from Aleph Alpha, **AstaBrief 8B** from Ai2, and **Index-Translate 2B / 9B / 35B-A3B Preview** from Bilibili. Canonical entries use official model cards and configuration files; no hosted mappings are added for these five entries.
+
+### Changed
+- Mapping RPM/TPM values can be `null` when unpublished or account-specific. New mappings use unknown values rather than borrowing limits from another model or account tier. Consumers should handle `null` before ingesting this release.
+- Total coverage: 212 models · 52 providers · 283 mappings.
+
 ## [1.15.0] - 2026-10-01
 
 ### Added

@@ -2,7 +2,7 @@
 
 The open-source registry of LLM models, inference providers, and provider-model mappings. Community-maintained, schema-validated, and machine-readable.
 
-**Current stats:** 203 models · 52 providers · 278 mappings
+**Current stats:** 212 models · 52 providers · 283 mappings
 
 ## Overview
 
@@ -18,7 +18,7 @@ OpenModels is a structured, version-controlled registry that serves as the singl
 | xAI | Grok 4.7, Grok 4.6, Grok 4.5, Grok 4.3, Grok 4.20, Grok 4.1 Fast, Grok 4 |
 | DeepSeek | DeepSeek V4.1 Flash, DeepSeek V4 Flash Vision Exp, DeepSeek V4 Pro, DeepSeek V4 Flash, DeepSeek V4, DeepSeek R1, DeepSeek V3 |
 | Meta | Muse Spark 1.3, Muse Spark 1.2, Muse Glimmer 30B, Muse Spark 1.1, Muse Spark, Llama 4 Scout, Llama 4 Maverick, Llama 3.3 70B, Llama 3.2 (3B/11B/90B), Llama 3.1 8B |
-| Mistral | Mistral Small 4, Mistral Medium 3.5, Mistral Large 3, Devstral 2, Mistral Small 3.1, Codestral |
+| Mistral | Mistral Large 4, Mistral Small 4, Mistral Medium 3.5, Mistral Large 3, Devstral 2, Mistral Small 3.1, Codestral |
 | Alibaba | Qwen 3.8 Max Prime, Qwen 3.8 Omni Flash, Qwen 3.8 Flash, Qwen3.8-Flash-Next, Qwen 3.8 Max, Qwen 3.8 2.4T-A95B, Qwen 3.8 27B, Qwen Flash Character, Qwen 3.7 Flash, Qwen 3.7 Plus, Qwen 3.7 Max, Qwen 3.6 (27B, 35B-A3B, Plus), Qwen 3.6, Qwen3 Coder, Qwen3 235B, Qwen3 32B, QwQ-32B |
 | Moonshot | Kimi K3, Kimi K2.7 Code, Kimi K2.6 |
 | Cohere | Command A+, Command A, Command R7B |
@@ -49,7 +49,11 @@ OpenModels is a structured, version-controlled registry that serves as the singl
 | Snowflake | Arctic |
 | Stability AI | StableLM 2 12B |
 | Uzbek LLM Lab | Alloma 8B Instruct |
-| InclusionAI | Ling 3.0 Flash VL, Ling 3.0 Flash Fin, Ling 3.0 Flash, Ring-2.6-1T |
+| InclusionAI | Ling 3.1 Flash, Ling 3.0 Flash VL, Ling 3.0 Flash Fin, Ling 3.0 Flash, Ring-2.6-1T |
+| Aleph Alpha | Kolibri 1 |
+| Ai2 | AstaBrief 8B |
+| Apodex | Apodex 1.1 Mini |
+| Bilibili | Index-Translate 2B, Index-Translate 9B, Index-Translate 35B-A3B Preview |
 | ByteDance Seed | Seed 2.1 Turbo, Seed 2.0 Code |
 | Meituan | LongCat 2.0 |
 | Kwaipilot | KAT-Coder-Pro V2.5 |
@@ -59,7 +63,7 @@ OpenModels is a structured, version-controlled registry that serves as the singl
 | AionLabs | Aion 3.5, Aion 3.5 Mini |
 | Nex AGI | Nex-N2.5-Pro, Nex-N2.5-Mini |
 | PrismML | Ternary Bonsai 2 27B |
-| Unbiased | Pareto |
+| Unbiased | Pareto 26.10 Preview, Pareto |
 | Dots Studio | Dots3-Note Preview |
 | Liquid AI | LFM2.5-2.6B |
 | Inference.net | Schematron V2 Turbo, Schematron V2 Small |
@@ -191,6 +195,8 @@ updated_at: "2025-01-01T00:00:00.000Z"
 ```
 
 **Required fields:** model_id, provider_id, provider_model_name, pricing, rate_limits, available_regions, created_at, updated_at
+
+`rate_limits.requests_per_minute` and `rate_limits.tokens_per_minute` are positive integers or `null` when no model-wide limit is published. `null` means unknown or account-specific, not zero or unlimited.
 
 ### Extensible Pricing Model
 

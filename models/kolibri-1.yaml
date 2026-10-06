@@ -1,0 +1,19 @@
+# Source: https://huggingface.co/Aleph-Alpha/Kolibri-1
+# Source: https://huggingface.co/Aleph-Alpha/Kolibri-1/tree/3eb3d73c3c36e24719f61fd5af9e64a4cc693ca3
+id: "kolibri-1"
+name: "Kolibri 1"
+description: "Aleph Alpha's German-English reasoning model with 78B total and 3.46B active parameters, tool calling, and Apache 2.0 weights. Supports up to 1,048,576 tokens; the developer recommends at most 262,144 tokens for serving efficiency and complex tasks."
+capabilities:
+  - chat
+  - completion
+  - function-calling
+  - code-generation
+  - reasoning
+modalities:
+  - text
+  - code
+context_window: 1048576
+licensing: "apache-2.0"
+country: "de"
+created_at: "2026-10-02T00:00:00.000Z"
+updated_at: "2026-10-06T00:00:00.000Z"
