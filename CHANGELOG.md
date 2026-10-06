@@ -5,6 +5,15 @@ All notable changes to the OpenModels Registry will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.16.1] - 2026-10-06
+
+### Removed
+- **Apodex 1.1 Mini**, **AstaBrief 8B**, and **Index-Translate 2B / 9B / 35B-A3B Preview**, together with the Apodex OpenRouter mapping. The registry focuses on major, verified releases: Apodex was only listed through a free OpenRouter endpoint with no published developer details, and the AstaBrief and Index-Translate entries had no hosted providers or pricing.
+
+### Changed
+- **Ling 3.1 Flash** licensing is now `other` instead of `proprietary`, matching other Ling releases whose license is not yet published.
+- Total coverage: 207 models · 52 providers · 282 mappings.
+
 ## [1.16.0] - 2026-10-06
 
 ### Added

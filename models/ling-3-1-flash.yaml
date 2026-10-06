@@ -14,7 +14,7 @@ modalities:
   - text
   - code
 context_window: 262144
-licensing: "proprietary"
+licensing: "other"
 country: "cn"
 created_at: "2026-09-30T00:00:00.000Z"
 updated_at: "2026-10-06T00:00:00.000Z"

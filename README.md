@@ -2,7 +2,7 @@
 
 The open-source registry of LLM models, inference providers, and provider-model mappings. Community-maintained, schema-validated, and machine-readable.
 
-**Current stats:** 212 models · 52 providers · 283 mappings
+**Current stats:** 207 models · 52 providers · 282 mappings
 
 ## Overview
 
@@ -51,9 +51,6 @@ OpenModels is a structured, version-controlled registry that serves as the singl
 | Uzbek LLM Lab | Alloma 8B Instruct |
 | InclusionAI | Ling 3.1 Flash, Ling 3.0 Flash VL, Ling 3.0 Flash Fin, Ling 3.0 Flash, Ring-2.6-1T |
 | Aleph Alpha | Kolibri 1 |
-| Ai2 | AstaBrief 8B |
-| Apodex | Apodex 1.1 Mini |
-| Bilibili | Index-Translate 2B, Index-Translate 9B, Index-Translate 35B-A3B Preview |
 | ByteDance Seed | Seed 2.1 Turbo, Seed 2.0 Code |
 | Meituan | LongCat 2.0 |
 | Kwaipilot | KAT-Coder-Pro V2.5 |
