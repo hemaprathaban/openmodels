@@ -1,6 +1,6 @@
 id: raindragon
 name: RainDragon
-description: US-hosted inference for open-weight models with an OpenAI-compatible API, pay-per-token pricing, and discounted cached input.
+description: US-hosted inference for open-weight models with an OpenAI-compatible API, pay-per-token pricing, discounted cached input, and prompts and responses deleted after 24 hours.
 api_base_url: https://inference.raindragon.ai/v1
 auth_type: bearer
 regions:
